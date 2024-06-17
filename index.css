@@ -1,0 +1,67 @@
+body {
+    background-color: rgb(38, 47, 63);
+    width: 100vw;
+    height: 100vh;
+
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+#Topbar {
+    background-color: #181b2c;
+    position: fixed;
+
+    width: 99vw;
+    height: 8vh;
+
+    left: 0vw;
+    right: 0vw;
+    top: 0vh;
+
+    text-align: center;
+}
+#Topbar a {
+    position: relative;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: min-content;
+
+    font-size: 3.2vh;
+    margin-right: 2.5%;
+    top: 1.6vh;
+}
+
+#ShowList {
+    position: absolute;
+
+    width: 65vw;
+    height: auto;
+
+    display: grid;
+    grid-template-columns: repeat(85, 1fr);
+    gap: 5%;
+
+    top: 10vh;
+    left: 10vw;
+    right: 0vw;
+
+    @media only screen and (max-width: 800px) {
+        overflow-x: auto;
+    }
+}
+
+.Show {
+    position: relative;
+    width: min-content;
+}
+.Show img{
+    height: 30vh;
+    width: auto;
+
+    border-radius: 4.5%;
+    transition-duration: 500ms;
+}
+.Show img:hover{
+    box-shadow: 0px 0px 25px rgb(105, 24, 255);
+}
